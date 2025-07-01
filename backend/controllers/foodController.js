@@ -37,7 +37,7 @@ const removeFood=async(req,res)=>{
         const food = await foodModel.findById(id);
         if(!food)
             return res.status(404).json({"message":"Food not found"})
-        await fsPromises.unlink(path.join(__dirname, '..', 'uploads', food.image));
+        await fsPromises.unlink(path.join(__dirname, '..', 'uploads', `${food.image}`));
         await foodModel.deleteOne({_id:id})
         res.status(200).json({"message":"Food deleted successfully"})
     }catch(error){

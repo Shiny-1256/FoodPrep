@@ -29,7 +29,17 @@ const Add = ({url}) => {
       formData.append('image', image);
       try{
         const response =  await axios.post(`${url}/api/food/add`,formData)
-        toast(response.data.message)
+        toast.success(response.data.message, {
+                      position: "top-right",
+                      autoClose: 1500,
+                      hideProgressBar: false,
+                      closeOnClick: false,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "colored",
+                      transition: Flip,
+                      });
         setData({
         name: "",
         description: "",

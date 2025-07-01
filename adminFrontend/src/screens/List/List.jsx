@@ -1,4 +1,4 @@
-import React from 'react'
+import {React} from 'react'
 import './List.css'
 import axios from 'axios'
 import {toast} from 'react-toastify'
@@ -23,7 +23,17 @@ const List = ({url}) => {
   const removeFood = async(id)=>{
     try{
       const response = await axios.delete(`${url}/api/food/remove?id=${id}`)
-      toast(response.data.message)
+      toast.success(response.data.message, {
+              position: "top-right",
+              autoClose: 1500,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              transition: Flip,
+              });
     }catch(error){
       console.log(error.message);
     }
