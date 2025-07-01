@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --theme-color: #2498a5;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Outfit';
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 1.6rem;
+    
+    background-color: #ffecd8;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #a9a9a9;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0 15px;
+}
+
+

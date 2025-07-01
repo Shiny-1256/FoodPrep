@@ -1,0 +1,84 @@
+.container{
+  position: fixed;
+  bottom: 100px;
+  right: 30px;  
+}
+
+.scroll-toggle {
+  background-color: var(--theme-color);
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  text-align: center;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 270px;
+  background: #fff8e7;
+  border: 2px solid #d9b57c;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+  animation: appear 0.3s ease;
+}
+
+.scroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px dashed #c8a97e;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.scroll-header button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #a67c52;
+}
+
+.scroll-body {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #5c4420;
+  font-size: 14px;
+}
+
+.scroll-body li {
+  margin: 6px 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .scroll {
+    width: 220px;
+    padding: 12px;
+  }
+  .scroll-body li {
+    font-size: 13px;
+  }
+  .scroll-toggle {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
