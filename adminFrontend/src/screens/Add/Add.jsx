@@ -2,7 +2,7 @@ import {useState} from 'react'
 import './Add.css'
 import {assets} from '../../assets/assets'
 import axios from 'axios'
-import {toast} from 'react-toastify'
+import {toast,Flip} from 'react-toastify'
 
 const Add = ({url}) => {
   const [image, setImage] = useState(false);
