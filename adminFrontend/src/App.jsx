@@ -8,7 +8,7 @@ import Orders from './screens/Orders/Orders'
 import './App.css'
 import { ToastContainer } from 'react-toastify';
 
-const url = 'https://foodprepadmin-3tzf.onrender.com'
+const url = 'https://foodprep-o6zx.onrender.com'
 
 const App = () => {
   return (

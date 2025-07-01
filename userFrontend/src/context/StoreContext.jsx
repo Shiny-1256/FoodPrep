@@ -3,7 +3,7 @@ export const StoreContext = createContext();
 import axios from 'axios';
 
 const StoreContextProvider = ({children}) => {
-  const url='https://foodprepuser-5lt4.onrender.com'
+  const url='https://foodprep-o6zx.onrender.com'
   const [token, setToken] = useState("");
   const[cartItems,setCartItems]=useState({});
   const [food_list,setFoodList]=useState([]);
